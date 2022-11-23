@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+</head>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+
+            <div class="heade">
+    
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="inicio.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="#">Bocaditos</a></li>
+                                    <li><a href="#">Tortas</a></li>
+                                    <li><a href="#">Postres</a></li>
+                                 </ul> -->
+                            </li>
+                        <li><a href="#" class="">Especialidades</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
+                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
+                                </ul> -->
+                        </li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+    
+                <div class="head">
+                    <a href="especial_tallados.html" class="ai"><i class="fa-solid fa-book"></i></a>
+                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
+                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                        
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+    
+            <div class="text-center text-white d-flex justify-content-center align-items-center bg-dark" id="imag">
+                
+                <h1 class="display-4 fw-bolder">Tienda</h1>
+            </div>
+            
+        </header>
+        <!-----------------SECTION-------------------->
+
+        <section class="container-xl mb-5">
+
+            <div class="row row-cols-lg-1 row-cols-xl-2">
+                <div class="">
+                    <h3 class="mb-5">PASTEL</h3>
+                    
+                    <div class="mb-5">    
+                        <!--  -->
+                        <h6 class="letra1">Porciones</h6>
+                            <select name="porciones" id="porciones" class="w-75 mb-3">
+                                <option value="">Seleccionar</option>
+                                <option value="">12 porciones</option>
+                                <option value="">20 porciones</option>
+                                <option value="">30 porciones</option>
+                            </select>
+                        
+                        <!--  -->
+                        <h6 class="letra1">Opciones de Cake</h6>
+                            <select name="" id="oqueque" class="w-75 mb-3">
+                                <option value="">Seleccionar</option>
+                                <option value="">Chocolate</option>
+                                <option value="">Vainilla</option>
+                                <option value="">Platano</option>
+                                <option value="">Naranja</option>
+                                <option value="">Zanahoria</option>
+                            </select>
+  
+                        <!--  -->
+                            
+                            <h6 class="letra1">Opciones de relleno</h6>
+                            <select name="" id="orelleno" class="w-75 mb-3">
+                                <option value="">Seleccionar</option>
+                                <option value="">Buttercream</option>
+                                <option value="">Cream Chesse</option>
+                                <option value="">Fudge</option>
+                                <option value="">Ganache</option>
+                                <option value="">Manjar blanco</option>
+                                <option value="">Manjar blanco y fudge</option>
+                            </select>
+                        <!--  -->     
+                   
+                        <h6 class="letra1">Dedicatoria S/ 5.00</h6>  
+                        <textarea class="w-75 mb-5" name="" id="" cols="30" rows="4" placeholder="Escribe una dedicatoria"></textarea>
+                        
+                        <!--  -->
+                        <h3>Precio S/120.00</h3>
+                        <!--  -->
+                        <input type="number" max="100" min="1" placeholder="1">
+                        <a href="carrito.html"><button class="boton1">Añadir al carrito</button></a>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="">
+                    <img class="w-100" src="past/m1.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer>
+        
+    </main>
+
+    </main>
+</body>
+</html>

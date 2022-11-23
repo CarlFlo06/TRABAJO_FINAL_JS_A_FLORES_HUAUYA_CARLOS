@@ -1,0 +1,286 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body{ text-align: center; }
+section{ width: 100%;align-items: center;justify-content: center; }
+textarea { resize: none; }
+
+/* ***** LETRAS ***** */
+p{ font-family: 'Suez One', serif; }
+span{ font-family: 'Lobster', cursive; }
+h1{ color: #FFFFFF;font-size: 60px;font-family: 'Lobster', cursive; }
+h2{ font-family: 'Lobster', cursive;font-size: 40px; }
+h3{ font-family: 'Lobster', cursive; }
+h4{ font-size: 18px;font-family: 'Suez One', serif; }
+a{ font-family: 'Suez One', serif; text-decoration: none; }
+
+/* ***** HEADER MENU ***** */
+.heade{
+    width: 100%;
+    top: 0;
+    height: 60px;
+    justify-content: center;
+    display: flex; }
+.menu{ text-align: center;width: 100%; }
+.menu ul{ padding: 0; }
+.menu ul li{ list-style: none; display: inline-block; }
+.menu ul li a{ text-decoration: none; font-weight: bold;
+    padding: 0 10px;display: block; line-height: 60px; color: brown;}
+.menu ul li a:hover{color: gray; transition: all .2s;}
+.head{
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; }
+.head a{ text-align: center; }
+.head a img{ width: 15%; }
+.head a{ margin: 10px; }
+
+.logo{ height: 45; background-color: black; margin-bottom: 10%;}
+.logo a{ text-align: center;}
+.logo a img{ width: 15%; }
+
+.head-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom; }
+
+/* ***** IMAGEN CON TEXTO CENTRADO ***** */
+.head-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom; 
+   
+    display: inline-block;
+    text-align: center; }
+.centrado{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+.centrado1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+.centrado2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* ***** HEADER BOTON ***** */
+.si{ font-size: 30px; margin: 50px 20px 0px 0px; }
+.ai{
+    font-family: 'Suez One', serif;
+    font-size: 20px;
+    color: brown;
+    /* background-color: white; */
+    text-decoration: none;
+    /* padding: 15px; */
+    /* border-radius: 5px; */
+    text-decoration: none; font-weight: bold;text-decoration: none; font-weight: bold;
+    border: none; }
+i:hover{ color: #030302; }
+
+/* ***** HEADER RESPONSIVE ***** */
+.thow{ height: 300px !important; }
+.icon-menu{
+    display: none; 
+    margin-left: auto;
+    font-family: 'Catamaran', sans-serif; 
+    color: rgb(255, 0, 0);
+    line-height: 60px; 
+    font-size: 25px; 
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    .icon-menu{
+      display: block;
+    }
+    #menu{
+      position: absolute; 
+      top: 60px;
+      left: 0; 
+      width: 100%;
+      height: 0; 
+      border: 1px solid #eee;
+      overflow: hidden; 
+      transition: .3s ease-out;
+    }
+    #menu ul li{
+      display: block; 
+      text-align: center;
+    }
+    #menu ul li a{
+      color: red; 
+      font-size: 15px;
+      background-color: white; 
+      width: 100%;
+    }
+    #menu ul li a:hover{
+      background: rgb(241, 129, 129);
+    }
+}
+
+/* ***** BOTON ***** */
+.boton1{
+    font-family: 'Suez One', serif;
+    font-size: 18px;
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; }
+
+.boton1:hover{background-color: #FAAC58;}
+
+/* ***** INICIO ***** */
+.imag img{ height: 500px; position: relative;width: 100%; }
+#imag{ height: 500px; }
+
+/* ***** NOSOTROS ***** */
+.seccion1{ padding-top: 0; }
+.seccion1 p{ margin: 10%; }
+.sec1{ width: 50%; }
+.sec1 img{ width: 50%; border-radius: 50%;box-shadow: 0 0 8px 8px rgba(0,0,0,0.5); }
+.sec2 { width: 50%;}
+
+/* ***** NUESTRAS DELICIAS ***** */
+.seccion2 {align-items: center;justify-content: center;align-content: center;}
+.seccion2 img{border-radius: 50%;box-shadow: 0 0 8px 8px rgba(0,0,0,0.5)}
+.seccion2 h4{margin-top: 20px;}
+
+/* ***** ESPECIALIDADES ***** */
+.seccion3{ display: flex; }
+.seccion3 img{width: 80%;box-shadow: -8px -8px 8px rgba(0,0,0,0.5);}
+
+.bloc1{width: 100%;}
+.bloc2 p{margin: 20px 50px 20px 50px;}
+.bloc3{width: 100%;}
+.bloc4 p{margin: 20px 50px 20px 50px;}
+
+/* ***** MAPA ***** */
+.seccion4{width: 100%;box-shadow: 0 0 8px 8px rgba(0,0,0,0.5);}
+
+/* ***** RESPOSIVE INICIO ***** */
+@media screen and (max-width: 760px){
+    .seccion3{ width: 100%;flex-wrap: wrap; }
+    .bloc1{ width: 100%;margin: 0 0 20px; }
+    .bloc3{ width: 100%; }
+}
+
+@media screen and (max-width:760px){
+    .seccion1{ flex-wrap: wrap; }
+    .seccion1 img{ width: 100%; }
+    .sec2{ width: 100%;text-align: center; }
+}
+
+/* ***** FOOTER ***** */
+footer img{width: 15%;}
+footer li{list-style: none;}
+footer li a{ text-decoration: none;}
+footer img:hover{transform:scale(1.5)}
+
+/* ***** PAG NOSOTROS ***** */
+.caja{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caja img{ justify-content: center; }
+@media screen and (max-width:760px){
+    .contener{width: 100%;flex-direction: column;}
+    .caja {width: 100%;height: auto;flex-direction: column;}
+    .caja img{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    #im1 {order: 1;}
+    #bl1{order: 2;}
+    #bl2{order: 4;}
+    #im2{order: 3;} }
+
+/***************Especial-Pasteles****************/
+.bloque1 {width: 50%;}
+.bloque1 img{width: 80%;}
+.bloque2 {width: 50%;}
+
+.sect1 {width: 100%;height: 300%}
+.sec2 img{height: 500%;}
+
+@media screen and (max-width:760px){
+    .sect1{flex-wrap: wrap;}
+    .bloque1 {width: 100%; margin-bottom: 20px;}
+    .bloque2 {width: 100%;} }
+
+/**************FORMULARIO***************/
+form p{color: white;}
+
+.s img{ height: 300px; }
+
+@media (max-width: 460px) {
+    .imgg {width: 310px;} }
+
+@media (max-width: 460px) {
+    .imgg1 { width: 100%; }
+    .factu { width: 100%; } }
+
+.imgg{ border: 0; }
+.imgg1{ margin-bottom: 40px; }
+
+/* PAGO */
+select{width: 100%;height: 50px;}
+.factu input{width: 100%;height: 50px;}
+b{color: red;}
+.check input{margin-right: 20px;}
+/* ******************************************* */
+/* ***** TIENDA ***** */
+/* .filtro button{ margin-bottom: 10%;} */
+/* a{
+    cursor: pointer;
+}*/
+/* .modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+} */
+.img-carrito{
+    width:200px;
+    padding:20px;
+} 
+/* .modal-content{
+    background-color: #E3D8D6;
+} */
+.cancontenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.imagen{
+    max-width:100%;
+}
+
+a{
+    cursor:pointer;
+}
+.alerta{
+    font-weight:700;
+}
+body{
+    background-color: #E3D8D6;
+    overflow-x: hidden;
+}
+.boton{
+    opacity:0;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+
+            <div class="heade">
+    
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="inicio.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="#">Bocaditos</a></li>
+                                    <li><a href="#">Tortas</a></li>
+                                    <li><a href="#">Postres</a></li>
+                                 </ul> -->
+                            </li>
+                        <li><a href="#" class="">Especialidades</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
+                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
+                                </ul> -->
+                        </li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+    
+                <div class="head">
+                    <a href="#" class="ai"><i class="fa-solid fa-book"></i></a>
+                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
+                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                        
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+    
+            <div class="text-center text-white d-flex justify-content-center align-items-center bg-dark" id="imag">
+                
+                <h1 class="display-4 fw-bolder">Contacto</h1>
+            </div>
+            
+        </header>
+        <!-----------------SECTION-------------------->
+
+        <h2>Complete el formulario</h2>
+        <form action="" name="frm" method="" class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 text-center justify-content-center">
+
+            <div class="">
+                <label for="">Nombres:</label><br>
+                <input class="col-8" id="nombre" type="text">
+                <p id="validar1"></p>
+            </div>
+
+            <div class="">
+                <label for="">Apellidos:</label><br>
+                <input class="col-8" id="apellido" type="text">
+                <p id="validar2">p</p>
+            </div>
+            
+            <div class="">
+                <label for="">Correo:</label><br>
+                <input class="col-8" id="correo" type="text" value="@email.com">
+                <p id="validar3">p</p>
+            </div>
+
+            <div class="">
+                <label for="">Fecha de entrega</label><br>
+                <input class="col-8" id="fecha" type="date">
+                <p id="validar4">p</p>
+            </div>
+
+            <div class="">
+                <label for="">Lugar</label><br>
+                <input class="col-8" id="lugar" type="text">
+                <p id="validar5">p</p>
+            </div>        
+
+            <div class="">
+                <label for="">Celular:</label><br>
+                <input class="col-8" id="celular" type="text" maxlength="9">
+                <p id="validar6">p</p>
+            </div>
+
+            <div class="">
+                <label for="">Hora de Entrega:</label><br>
+                <input class="col-4" id="hora" type="time">
+                <select class="col-4" name="" id="">
+                    <option value="">am</option>
+                    <option value="">pm</option>
+                </select>
+                <p id="validar7">p</p>
+            </div>
+
+            <div class="col">
+                <label for="">Sabor</label><br>
+                <input class="col-8" id="sabor" type="text">
+                <p id="validar8">p</p>
+            </div>
+
+            <div class="row-cols-1 text-center justify-content-center d-grid m-auto">
+                <label for="">Mensaje:</label>
+                <textarea name="" id="mensaje" cols="100" rows="5"></textarea>
+                <p id="validar9">p</p>
+            </div>
+
+        </div>
+        <div class="row-cols-1 text-center justify-content-center d-grid">
+            <button  type="button" id="btnSend" onclick="valida_envia()" class="btn btn-success my-2">Enviar</button>
+            <button type="submit" class="btn btn-success my-2">Cancelar</button>
+        </div>
+        </form>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer>
+
+    </main>
+    <script src="js/cotizacion.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

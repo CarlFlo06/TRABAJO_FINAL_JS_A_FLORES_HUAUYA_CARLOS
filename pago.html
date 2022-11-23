@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+</head>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+
+            <div class="heade">
+    
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="inicio.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="#">Bocaditos</a></li>
+                                    <li><a href="#">Tortas</a></li>
+                                    <li><a href="#">Postres</a></li>
+                                 </ul> -->
+                            </li>
+                        <li><a href="#" class="">Especialidades</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
+                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
+                                </ul> -->
+                        </li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+    
+                <div class="head">
+                    <a href="especial_tallados.html" class="ai"><i class="fa-solid fa-book"></i></a>
+                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
+                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                        
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+    
+            <div class="text-center text-white d-flex justify-content-center align-items-center bg-dark" id="imag">
+                
+                <h1 class="display-4 fw-bolder">Tienda</h1>
+            </div>
+            
+        </header>
+        <!-----------------SECTION-------------------->
+
+        <section class="container-xl mb-5">
+ 
+            <!-- INICIO DE FORMULARIO -->
+            <form action="" class="row row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
+                <div class="bg-secondary factu justify-content-center">
+
+                    <h3 class="mb-3">Seleccione su fecha y hora</h3>
+                    <label class="mb-2"  for="">Seleccione el tipo de orden <b>*</b></label><br>
+                    <button class="boton1">Recocjo en local</button>
+                    <button class="mb-3 boton1">Delivery</button><br>
+
+                    <!--  -->
+                    <label>Local de recojo <b>*</b></label><br>
+                    <select name="" id="" class="w-75">
+                        <option value="">Local de recojo</option>
+                        <option value="">Miraflores</option>
+                        <option value="">Lima</option>
+                        <option value="">SJL</option>
+                    </select><br>
+
+                    <!-- HORARIO -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+                        <div class="col mb-2">
+                            <label>Fecha de entrega <b>*</b></label><br>
+                            <input type="date">
+                        </div> 
+                        <div class="col mb-2">
+                            <label>Horario de entrega <b>*</b></label><br>
+                            <select name="" id="">
+                                <option value="">Horario de entrega</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    
+                    <h3>Detalles de facturación</h3>
+
+                    <!-- DATOS -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 mb-5">
+                        <div class="col bg-danger">
+                            <label for="">Nombres Completos <b>*</b></label><br>
+                            <input type="text"><br>
+
+                            <label for="">Comprobante <b>*</b></label><br>
+                            <select name="" id="">
+                                <option value="">Seleccionar</option>
+                            </select><br>
+
+                            <label for="">Teléfono <b>*</b></label><br>
+                            <input type="text"> 
+                        </div>
+                        <div class="col">
+                            <label for="">Apellidos Completos <b>*</b></label><br>
+                            <input type="text"><br>
+                            
+                            <label for="">DNI *</label><br>
+                            <input type="text"><br>
+                
+                            <label for="">Correo electrónico <b>*</b></label><br>
+                            <input type="text">
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--  -->
+                <div class="">
+                    <h3 class="mb-3">Detalles del pedido</h3>
+                    <!-- TABLA -->
+                    <table class="table">
+
+                        <thead>
+                            <th>Producto</th>
+                            <th>Subtotal</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Envio</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <!--  -->
+                    <div class="check">
+                        <!-- METODO DE PAGO -->
+                        <label for="">Tarjeta de crédito/débito</label>
+                        <i class="fa-brands fa-cc-visa si"></i>
+                        <i class="fa-brands fa-cc-mastercard si"></i>
+                        <i class="fa-brands fa-cc-amex si"></i>
+                        <i class="fa-brands fa-cc-paypal si"></i>
+                        <label class="mb-4 mt-4">
+                            Los campos para incluir datos que se 
+                            encuentran marcados con un (*) en este 
+                            formulario, son de obligatorio llenado, 
+                            por ser necesarios para procesar tu pedido, 
+                            mejorar tu experiencia en esta web, gestionar 
+                            el acceso a tu cuenta y otros propósitos descritos 
+                            en los siguientes enlaces.
+                        </label>
+                        <div class="input-group mb-2">
+                            <input type="checkbox">
+                            <label for="">He leído y estoy de acuerdo con las 
+                                <b class="text-danger">políticas de privacidad. *</b>
+                            </label>
+                        </div>
+                        
+                        <div class="input-group mb-2">
+                            <input type="checkbox">
+                            <label for="">He leído y estoy de acuerdo con los 
+                                <b class="text-danger">términos y condiciones de la web *</b> 
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox">
+                            <label for="">Autorizo el tratamiento de mis datos 
+                                personales para el envío de publicidad
+                            </label>
+                        </div>
+                        
+                        <button class="boton1 m-5">Realizar Pedido</button>
+                        <!-- FIN DE PAGO -->
+                    </div>
+                    <!--  -->
+                </div>
+                <!-- FIN DE FORMULARIO -->
+            </form>
+                
+        </section>
+        <!-------------------------------------------->
+
+        <section class="container-xl justify-content-center">
+
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col imgg1 d-flex">
+                    <i class="fa-sharp fa-solid fa-briefcase si"></i>
+                    <div class="">
+                        <h3 class="mb-4">Metodos de envio</h3>
+                        <p>Puedes elegir entre delivery o recojo en local: Jr. José Antonio 184, La Molina.</p>
+                    </div>     
+                </div>
+    
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-credit-card si"></i>
+                    <div>
+                        <h3 class="mb-4">Opciones de pago</h3>
+                        <p>Le ofrecemos varias formas de pagar por su compra.</p>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-thumbs-up si"></i>
+                    <div class="">
+                        <h3 class="mb-4">100% Satisfacción</h3>
+                        <p>Usted disfrutará de un producto de calidad.</p>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-pen-to-square si"></i>
+                    <div class="">
+                        <h3 class="mb-4">Escribenos</h3>
+                        <p>Le responderemos lo más pronto posible.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer>
+
+    </main>
+</body>
+</html>

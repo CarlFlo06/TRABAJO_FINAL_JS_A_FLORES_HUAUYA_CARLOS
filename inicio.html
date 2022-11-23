@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/icon/cake.png"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    
+    <!-- <style>
+        .image-menu{
+            background-image: url(img/banner.jpg);
+        }
+    </style> -->
+</head>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+            <div class="heade">
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="inicio.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="#">Bocaditos</a></li>
+                                    <li><a href="#">Tortas</a></li>
+                                    <li><a href="#">Postres</a></li>
+                                </ul> -->
+                        </li>
+                        <li><a href="#" class="">Especialidades</a>
+                                <!-- <ul class="submenu">
+                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
+                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
+                                </ul> -->
+                        </li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+
+                <div class="head">
+                    <a href="#" class="ai"><i class="fa-solid fa-book"></i></a>
+                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                    
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!-- HEADER IMAGEN Y BOTON -->
+            <div class="head-img">
+                <img id="imag" src="img/banner.jpg" alt="">
+                
+                <div class="centrado1"><p>Bievenidos a</p></div> 
+                <div class="centrado"><h1>JHON BETH</h1></div>
+                <div class="centrado2"><p>Un lugar para el capricho</p></div>
+            </div>
+
+            <div class="w-100 d-flex">
+                <button class="w-50 ai" id="imggg"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="w-50 ai" id="imggg1"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <!-- FIN DE HEADER IMAGEN Y BOTON -->
+        </header>
+        <!-----------------SECTION-------------------->
+
+        <h2>Nosotros</h2>
+        <section class="seccion1 container-xxl d-flex mt-5 mb-5">
+            <div class="sec1">
+                <img class="" src="img/imagen1.jpg" alt="">
+            </div>
+            <div class="sec2">
+                <!-- <div>
+                    <p></p> -->
+                    <p class="">Somos una nueva repostería 
+                        que le pone mucho talento 
+                        y dedicación a cada uno de sus dulces. 
+                        Todos nuestros productos son hechos a mano 
+                        y al día, no contienen conservantes químicos 
+                        ni mejoradores de masa lo que hace que sean 
+                        frescos y saludables.</p>
+                    <a href="nosotros.html"><button class="boton1">Mas información</button></a>
+                <!-- </div> -->
+            </div>
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Nuestras delicias</h2>
+        <section class="mb-5 seccion2 mt-5">
+
+            <div id="" class="container-xxl">
+
+                <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-6" id="muestra">
+                
+                </div>
+                
+            </div>
+            <button class="boton1">Ver más</button>
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Especialidades</h2>
+        <section class="seccion3 container-xxl mt-5">        
+            <div class="bloc1">
+                <img src="past/pastel5.jpg" alt="">
+            
+                <div class="bloc2">
+                    <p>Es una de las artes de repostería 
+                        que emplea glaseados, coberturas, 
+                        merengue y otros elementos decorativos 
+                        comestibles para mejorar el aspecto de 
+                        las tartas.</p>
+                </div>
+            </div>
+            <div class="bloc3">  
+                <img src="img/tallado.jpg" alt="">
+            
+                <div class="bloc4">
+                    <p>Este arte de esculpir vegetales recibe 
+                        el nombre de Mukimono, y recuerda al 
+                        del ikebana (el famoso arte floral japonés) 
+                        ya que las verduras adoptan formas de flores.</p>
+                </div> 
+            </div> 
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Ubicanos en</h2>
+        <section class="seccion4 container my-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62427.1278472351!2d-77.12477445602418!3d-12.064460253652113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91c021a5ee5%3A0x70592dcc80745c0c!2sDon%20Cejis%20-%20REPOSTER%C3%8DA!5e0!3m2!1ses-419!2spe!4v1667334842029!5m2!1ses-419!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer> 
+
+    </main>
+    <script src="js/carrusel.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
