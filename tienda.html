@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/icon/cake.png"/>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     
@@ -29,7 +30,7 @@
             <div class="heade">
     
                 <!-- BARRA NAVEGACIÓN -->
-                <div class="head">
+                <div class="logo-head">
                     <a href="#" class="bg-black">
                         <img class="icon" src="icon/cake.png" alt="">
                         <span>Jhon Beth</span> 
@@ -60,7 +61,7 @@
                     <a href="especial_tallados.html" class="ai"><i class="fa-solid fa-book"></i></a>
                     <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
                     <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
-                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    <a href="carrito.html" class="ai" ><i class="bi bi-cart" id="carritoContenedor">0</i></a>
                     
                 </div>
                 <!-- FIN DE BARRA DE NAVEGACIÓN -->
@@ -79,6 +80,12 @@
         </header>
         <!-----------------SECTION-------------------->
 
+        <!-- BOTON FLOTANTE -->
+        <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
+            <i class="bi bi-cart" id="carritoContenedor1">0</i>
+        </a>
+        <!--  -->
+
         <!-- FILTRO -->
         <h2 class="mb-5">Filtro</h2>
         <section class="container filtro bg-danger mb-5">
@@ -90,17 +97,18 @@
             </div> 
         </section>
         <!-------------------------------------------->
-        <!-- CONTENEDOR CARRITO -->
-        <!-- IMPORTANTE -->
-        <!-- IMPORTANTE -->
+        
         <!-- CATALOGO -->
         <h2 class="mb-5 text-center">Nuestras delicias</h2>
         <section class="mb-5">
 
-            <div id="" class="container-xxl text-center">
+            <div id="mostrar" class="container-xxl text-center">
 
                 <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6" id="contenedor">
-                
+                    
+                </div>
+                <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6" id="contenedor2">
+                    
                 </div>
                 <!-- FILTROS -->
                 <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-6" id="filtro1">
@@ -114,14 +122,16 @@
                 </div>
                 
             </div> 
-
+            <!-- PAGINACIÓN -->
+            <ul class="pagination pagination-lg justify-content-center bg-body">
+                <li class="page-item"><a class="page-link ai" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link ai" href="#" id="pag1">1</a></li>
+                <li class="page-item"><a class="page-link ai" href="#" id="pag2">2</a></li>
+                <li class="page-item"><a class="page-link ai" href="#">3</a></li>
+                <li class="page-item"><a class="page-link ai" href="#">Next</a></li>
+            </ul>
         </section>
-        <!-- <main>
-            <div class="container-xl">
-                <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-6" id="contenedor"></div>
-            </div>
-            
-        </main> -->
+
         <!-- CARRITO LATERAL DERECHO -->
         <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
 
@@ -244,6 +254,7 @@
     <script src="js/menu.js"></script>
     <script src="js/tienda.js"></script>
     <script src="js/filtro.js"></script>
+    <script src="js/postres.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

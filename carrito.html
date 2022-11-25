@@ -28,7 +28,7 @@
             <div class="heade">
     
                 <!-- BARRA NAVEGACIÓN -->
-                <div class="head">
+                <div class="logo-head">
                     <a href="#" class="bg-black">
                         <img class="icon" src="icon/cake.png" alt="">
                         <span>Jhon Beth</span> 
@@ -76,25 +76,57 @@
             </div>
             
         </header>
+        <!-- CARRITO LATERAL DERECHO -->
+
+        <!-- BOTON FLOTANTE -->
+        <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
+            <i class="bi bi-cart" id="carritoContenedor1">0</i>
+        </a>
+        <!--  -->
+
+        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
+
+            <div class="offcanvas-header" id="offcanvasRight">
+                <div class="offcanvas-title">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="offcanvas-body">
+                
+            </div>
+            <div class="offcanvas-footer">
+                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
+                Continuar compra
+                </button><br>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+
         <!-----------------SECTION-------------------->
-        <!-- <button id="activarFuncion" class="btn btn-secondary boton mt-2">¡Click!</button> -->
-        <!-- BOTON ACTIVADOR -->
+
         <section class="container mt-5 mb-5" id="activarFuncion">
             <h3 class="mb-5">Productos en el carrito de compras</h3>
-            <div id="carrito" class="form-group table-responsive">
-                <table class="table" id="lista-compra">
+            <div id="carrito" class="form-group">
+                <table class="table table-responsive" id="lista-compra">
                     <thead>
                         <tr>
-                            <th></th>
                             <th></th>
                             <th>Nombre del Producto</th>
                             <th>Precio por unidad</th>
                             <th>Cantidad</th>
                             <th>Total</th>
+                            <!-- <th>Acción</th> -->
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="items">
                         <!-- CONTENIDO CARRITO -->
+                        
                     </tbody>
                     <tr>
                         <th colspan="4" scope="col" class="text-right">TOTAL
@@ -103,26 +135,27 @@
                         <!-- <th scope="col"></th> -->
                     </tr>
                 </table>
-            </div>
-            <div class="row justify-content-center d-none" id="spinner">
-                <div class="spinner">
-                    <div class="dot1"></div>
-                    <div class="dot2"></div>
+                <div class="row justify-content-center d-none" id="spinner">
+                    <div class="spinner">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row justify-content-between">
-                <div class="col-md-4 mb-2">
-                    <a href="tienda.html" class="btn btn-info btn-block">Seguir comprando</a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                     <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra" >
+    
+                <div class="row justify-content-between">
+                    <div class="col-md-4 mb-2">
+                        <a href="tienda.html" class="btn btn-info btn-block">Seguir comprando</a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                         <!-- <input type="submit" class="btn btn-success btn-block" id="button"> -->
+                         <a href="pago.html" class="btn btn-success">Finalizar compra</a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-------------------------------------------->
 
-        <a href="pago.html"><button class="boton1 mb-5">Pago</button></a>
+        <!-- <a href="pago.html"><button class="boton1 mb-5">Pago</button></a> -->
 
         <!-------------------------------------------->
 
@@ -213,8 +246,9 @@
         </footer>
 
     </main>
-    <!-- <script src="js/tienda.js"></script> -->
-    <script src="js/compra.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- <script src="js/compra.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

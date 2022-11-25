@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/icon/cake.png"/>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
@@ -32,14 +33,16 @@
         <!------------------HEADER-------------------->
         
         <header class="mb-5">
+        
             <div class="heade">
                 <!-- BARRA NAVEGACIÓN -->
-                <div class="head">
+                <div class="logo-head">
                     <a href="#" class="bg-black">
                         <img class="icon" src="icon/cake.png" alt="">
                         <span>Jhon Beth</span> 
                     </a>
                 </div>
+                
                 <nav id="menu" class="menu">
                     <ul class="">
                         <li><a href="inicio.html" class="">Inicio</a></li>
@@ -72,7 +75,7 @@
                 </div>
             </div>
             <!-- HEADER IMAGEN Y BOTON -->
-            <div class="head-img">
+            <!-- <div class="head-img">
                 <img id="imag" src="img/banner.jpg" alt="">
                 
                 <div class="centrado1"><p>Bievenidos a</p></div> 
@@ -83,6 +86,52 @@
             <div class="w-100 d-flex">
                 <button class="w-50 ai" id="imggg"><i class="fa-solid fa-chevron-left"></i></button>
                 <button class="w-50 ai" id="imggg1"><i class="fa-solid fa-chevron-right"></i></button>
+            </div> -->
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide head-img" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption text-warning fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1>JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption text-danger fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1 class="text-black">JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner2.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption text-warning fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1>JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner3.jpg" alt="New York" class="d-block w-100">
+                </div>
+                </div>
+            
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
             <!-- FIN DE HEADER IMAGEN Y BOTON -->
         </header>
@@ -203,7 +252,8 @@
         </footer> 
 
     </main>
-    <script src="js/carrusel.js"></script>
+    
+    <!-- <script src="js/carrusel.js"></script> -->
     <script src="js/inicio.js"></script>
     <script src="js/menu.js"></script>
 </body>
