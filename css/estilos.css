@@ -86,31 +86,32 @@ i:hover{ color: #030302; }
 }
 @media screen and (max-width: 800px){
     .icon-menu{
-      display: block;
+        display: block;
     }
     #menu{
-      position: absolute; 
-      top: 60px;
-      left: 0; 
-      width: 100%;
-      height: 0; 
-      border: 1px solid #eee;
-      overflow: hidden; 
-      transition: .3s ease-out;
-      z-index: 1;
+        position: absolute; 
+        top: 60px;
+        left: 0; 
+        width: 100%;
+        height: 0; 
+        border: 1px solid #eee;
+        overflow: hidden; 
+        transition: .3s ease-out;
+        z-index: 2;
     }
     #menu ul li{
-      display: block; 
-      text-align: center;
+        display: block; 
+        text-align: center;
     }
     #menu ul li a{
-      color: brow; 
-      font-size: 15px;
-      background-color: white; 
-      width: 100%;
+        color: brow; 
+        font-size: 15px;
+        background-color: white; 
+        width: 100%;
     }
     #menu ul li a:hover{
-      background: rgb(241, 129, 129);
+        color: #030302;
+        background: rgb(236, 152, 96);
     }
 }
 
@@ -129,14 +130,16 @@ i:hover{ color: #030302; }
 
 /* ***** INICIO ***** */
 .imag img{ height: 500px; position: relative;width: 100%; }
-#imag{ height: 500px; }
+#imag{ height: 300px; }
 
 /* ***** NOSOTROS ***** */
+.pbordes{ border: 4px dashed black; }
 .seccion1{ padding-top: 0; }
 .seccion1 p{ margin: 10%; }
 .sec1{ width: 50%; }
 .sec1 img{ width: 50%; border-radius: 50%;box-shadow: 0 0 8px 8px rgba(0,0,0,0.5); }
 .sec2 { width: 50%;}
+.caja img {  height: 250px; }
 
 /* ***** NUESTRAS DELICIAS ***** */
 .seccion2 {align-items: center;justify-content: center;align-content: center;}
@@ -172,7 +175,7 @@ i:hover{ color: #030302; }
 footer img{width: 15%;}
 footer li{list-style: none;}
 footer li a{ text-decoration: none; color: #eee;}
-footer img:hover{transform:scale(1.5)}
+footer img:hover{transform:scale(1.2)}
 
 /* ***** PAG NOSOTROS ***** */
 .caja{
@@ -182,13 +185,14 @@ footer img:hover{transform:scale(1.5)}
     align-items: center;
     flex-direction: column;
 }
-.caja img{ justify-content: center; }
+/* .caja img{ justify-content: center; } */
 @media screen and (max-width:760px){
     .contener{width: 100%;flex-direction: column;}
     .caja {width: 100%;height: auto;flex-direction: column;}
     .caja img{
-        width: 100%;
-        height: auto;
+        width: 80%;
+        /* height: auto; */
+        height: 300px;
         flex-direction: column;
     }
     #im1 {order: 1;}
@@ -269,7 +273,6 @@ a{
     z-index:1;
 }
 .btnflotante{
-    position: sticky;
     position: fixed;
     width: 55px;
     height: 55px;
@@ -284,6 +287,37 @@ a{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
     z-index:2;
 }
-.fincoinput{
+.btnflotante2{
+    border-radius: 50px;
+    bottom: 50px;
+    left: 20px;
+    font-size: 30px;
+    line-height: 55px;
+    bottom: 20px;
+    /* padding: 10px 0 0; */
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    /* background-color: #2bb92b; */
+    background-color: #38e038;
+    position: fixed;
+    text-align: center;
+    height: 55px;
+    width: 55px;
+    z-index: 2;
+}
+.btnflotante2 img{ width: 50px; height: 50px; }
+.btnflotante2:hover{ background-color: #92f392; }
+.fincoinputs{
     box-shadow: 0 0 6px 1px #ff0000;
 }
+/* CONTACTO */
+.icono{width: 110px;padding: 0%;font-size: 50px;
+    background-color: #E3D8D6;border: 0px;margin-bottom: 25px;}
+.p-incorrecto{color: red;margin: 0%;font-size: 12px;}
+.p-correcto{color: green;margin: 0%;font-size: 12px;}
+.fcoinput input{box-shadow: 0 0 6px 1px #008000;}
+.fincoinput input{box-shadow: 0 0 6px 1px #ff0000;}
+.fcoinput textarea{box-shadow: 0 0 6px 1px #008000;}
+.fincoinput textarea{box-shadow: 0 0 6px 1px #ff0000;}
+.w p{height: 30px; margin: 0%;display: flex;
+    justify-content: center;align-items: center;}
+#formu i{ color: brown; }

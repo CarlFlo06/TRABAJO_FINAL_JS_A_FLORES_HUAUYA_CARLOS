@@ -39,8 +39,7 @@ function rCatalogo(muestra) {
                 "<img class='card-img-top' src="+elemento.img+"></img>"+
                 "<div class='card-body'>"+
                     "<h3 style='height: 70px;'>"+elemento.Nombre+"</h3>"+
-                    "<p>"+elemento.precio+"</p>"+
-                    "<p>"+elemento.estado+"</p>"+
+                    
                 "</div>"+
             "</div>";
 

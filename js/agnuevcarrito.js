@@ -1,27 +1,27 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    $("#ac").click(function(){
-        // let por = document.getElementById("porciones").value;
-        let por = $("#porciones").val();
-        let oque = $("#oqueque").val();
-        let ore = $("#orelleno").val();
+//     $("#ac").click(function(){
+//         // let por = document.getElementById("porciones").value;
+//         let por = $("#porciones").val();
+//         let oque = $("#oqueque").val();
+//         let ore = $("#orelleno").val();
 
-        switch (por) {
-            case "p1":
-                alert("12 porciones");
-                break;
+//         switch (por) {
+//             case "p1":
+//                 alert("12 porciones");
+//                 break;
         
-            case "p2":
-                alert("20 porciones");
-                break;
+//             case "p2":
+//                 alert("20 porciones");
+//                 break;
         
-            case "p3":
-                alert("30 porciones");
-                break;
+//             case "p3":
+//                 alert("30 porciones");
+//                 break;
         
-            default: alert("selecciona una porcion")
-                break;
-        }
+//             default: alert("selecciona una porcion")
+//                 break;
+//         }
         
         // switch (oque) {
         //     case "oq1":
@@ -151,8 +151,8 @@ $(document).ready(function(){
         //     }
         
 
-        })
+//         })
 
-})
+// })
 
     

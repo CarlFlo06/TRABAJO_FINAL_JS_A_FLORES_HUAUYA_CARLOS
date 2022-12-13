@@ -38,19 +38,8 @@
                     <ul class="">
                         <li><a href="inicio.html" class="">Inicio</a></li>
                         <li><a href="nosotros.html" class="">Nosotros</a></li>
-                        <li><a href="tienda.html" class="">Tienda</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="#">Bocaditos</a></li>
-                                    <li><a href="#">Tortas</a></li>
-                                    <li><a href="#">Postres</a></li>
-                                 </ul> -->
-                            </li>
-                        <li><a href="#" class="">Especialidades</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
-                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
-                                </ul> -->
-                        </li>
+                        <li><a href="tienda.html" class="">Tienda</a></li>
+                        <li><a href="#" class="">Especialidades</a></li>
                         <li><a href="contacto.html" class="">Contáctanos</a></li>
                     </ul>    
                 </nav>
@@ -59,7 +48,7 @@
                     <a href="#" class="ai"><i class="fa-solid fa-book"></i></a>
                     <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
                     <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
-                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    <a href="carrito.html" class="ai"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
                     
                 </div>
                 <!-- FIN DE BARRA DE NAVEGACIÓN -->
@@ -76,14 +65,19 @@
             </div>
             
         </header>
-        <!-- CARRITO LATERAL DERECHO -->
-
+        <!-------------------------------------------->
+        
         <!-- BOTON FLOTANTE -->
+        <a class="btnflotante2">
+            <img class="" src="icon/whatsapp.png" alt="">
+        </a>
+        <!--  -->
+        <!-- BOTON FLOTANTE 2 -->
         <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
             <i class="bi bi-cart" id="carritoContenedor1">0</i>
         </a>
         <!--  -->
-
+        <!-- CARRITO LATERAL DERECHO -->
         <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
 
             <div class="offcanvas-header" id="offcanvasRight">
@@ -100,13 +94,13 @@
                     Vaciar carrito
                 </button>
                 <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
-                Continuar compra
+                    Continuar compra
                 </button><br>
                 <span>Precio total:</span>
                 <p class="text-center" id="precioTotal"></p>
             </div>
         </div>
-
+        
         <!-----------------SECTION-------------------->
 
         <section class="container mt-5 mb-5" id="activarFuncion">
@@ -120,42 +114,69 @@
                             <th>Precio por unidad</th>
                             <th>Cantidad</th>
                             <th>Total</th>
-                            <!-- <th>Acción</th> -->
                             <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody id="items">
-                        <!-- CONTENIDO CARRITO -->
-                        
-                    </tbody>
-                    <tr>
-                        <th colspan="4" scope="col" class="text-right">TOTAL
-                            <p id="totalProceso"></p>
-                        </th>
-                        <!-- <th scope="col"></th> -->
-                    </tr>
+                        <!-- CONTENIDO CARRITO -->    
+                    </tbody>     
                 </table>
-                <div class="row justify-content-center d-none" id="spinner">
+
+                <!-- <div class="row justify-content-center d-none" id="spinner">
                     <div class="spinner">
                         <div class="dot1"></div>
                         <div class="dot2"></div>
                     </div>
-                </div>
+                </div> -->
     
-                <div class="row justify-content-between">
-                    <div class="col-md-4 mb-2">
-                        <a href="tienda.html" class="btn btn-info btn-block">Seguir comprando</a>
+                <div class="d-flex justify-content-between">
+                    <div class="col-md-4 mb-4">
+                        <a href="tienda.html" class="boton1">Seguir comprando</a>
                     </div>
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-md-4 mb-4">
+                        <input id="vale" type="text" class="form-control" placeholder="Coloque su cupon de descuento">
+                        <button onclick="ingresarVale()" id="cupodes" type="button" class="boton1">Cupon de descuento</button>
+                    </div>
+                    <div class="col-md-4 mb-4">
                          <!-- <input type="submit" class="btn btn-success btn-block" id="button"> -->
-                         <a href="pago.html" class="btn btn-success">Finalizar compra</a>
+                         <a href="pago.html" class="boton1">Finalizar compra</a>
                     </div>
                 </div>
+
+                <table class="">
+                    <tr>
+                    <!-- <th colspan="4" scope="col" class="text-right">TOTAL
+                        <p id="totalProceso"></p>
+                    </th> -->
+                    
+                    </tr>
+                </table>
+                <table class="table mt-5 table-responsive" style="border: 2px dashed black;">
+
+                    <thead>
+                        <th><h2>Subtotal</h2></th>
+                        <th><h2>Igv</h2></th>
+                        <th><h2>Total</h2></th>
+                    </thead>
+                    <tbody>
+
+                        <tr> 
+                            <td>
+                                <h3 id="totalProceso"></h3>
+                            </td>
+                            <td>
+                                <h3 id="igv"></h3>
+                            </td>
+                            <td>
+                                <h3 id="total"></h3>
+                            </td>
+                        </tr>
+          
+                    </tbody>
+
+                </table>
             </div>
         </section>
-        <!-------------------------------------------->
-
-        <!-- <a href="pago.html"><button class="boton1 mb-5">Pago</button></a> -->
 
         <!-------------------------------------------->
 

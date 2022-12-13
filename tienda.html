@@ -40,27 +40,15 @@
                     <ul class="">
                         <li><a href="inicio.html" class="">Inicio</a></li>
                         <li><a href="nosotros.html" class="">Nosotros</a></li>
-                        <li><a href="tienda.html" class="">Tienda</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="#">Bocaditos</a></li>
-                                    <li><a href="#">Tortas</a></li>
-                                    <li><a href="#">Postres</a></li>
-                                 </ul> -->
-                            </li>
-                        <li><a href="#" class="">Especialidades</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
-                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
-                                </ul> -->
-                        </li>
+                        <li><a href="tienda.html" class="">Tienda</a></li>
+                        <li><a href="#" class="">Especialidades</a></li>
                         <li><a href="contacto.html" class="">Contáctanos</a></li>
                     </ul>    
                 </nav>
     
                 <div class="head">
                     <a href="especial_tallados.html" class="ai"><i class="fa-solid fa-book"></i></a>
-                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
-                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+
                     <a href="carrito.html" class="ai" ><i class="bi bi-cart" id="carritoContenedor">0</i></a>
                     
                 </div>
@@ -78,31 +66,61 @@
             </div>
             
         </header>
-        <!-----------------SECTION-------------------->
-
+        <!-------------------------------------------->
+        
         <!-- BOTON FLOTANTE -->
+        <a href="https://wa.me/51979617922" class="btnflotante2">
+            <img class="" src="icon/whatsapp.png" alt="">
+        </a>
+        <!--  -->
+        <!-- BOTON FLOTANTE 2 -->
         <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
             <i class="bi bi-cart" id="carritoContenedor1">0</i>
         </a>
         <!--  -->
+        <!-- CARRITO LATERAL DERECHO -->
+        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
 
+            <div class="offcanvas-header" id="offcanvasRight">
+                <div class="offcanvas-title">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="offcanvas-body">
+                
+            </div>
+            <div class="offcanvas-footer">
+                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
+                    Continuar compra
+                </button><br>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+
+        <!-----------------SECTION-------------------->
         <!-- FILTRO -->
         <h2 class="mb-5">Filtro</h2>
         <section class="container filtro bg-danger mb-5">
             <div class="justify-content-center row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
                 <button id="b1" class="boton1 col-10">Todos</button>
-                <button id="b2" class="boton1 col-10">Eventos</button>
-                <button id="b3" class="boton1 col-10">Postres</button>
+                <button id="b2" class="boton1 col-10">Familiares</button>
+                <button id="b3" class="boton1 col-10">Eventos</button>
                 <button id="b4" class="boton1 col-10">Regalos</button>
             </div> 
         </section>
+
         <!-------------------------------------------->
         
         <!-- CATALOGO -->
         <h2 class="mb-5 text-center">Nuestras delicias</h2>
         <section class="mb-5">
 
-            <div id="mostrar" class="container-xxl text-center">
+            <div id="mostrar" class="container-xxl text-center mb-5">
 
                 <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6" id="contenedor">
                     
@@ -123,45 +141,19 @@
                 
             </div> 
             <!-- PAGINACIÓN -->
-            <ul class="pagination pagination-lg justify-content-center bg-body">
-                <li class="page-item"><a class="page-link ai" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link ai" href="#" id="pag1">1</a></li>
-                <li class="page-item"><a class="page-link ai" href="#" id="pag2">2</a></li>
-                <li class="page-item"><a class="page-link ai" href="#">3</a></li>
-                <li class="page-item"><a class="page-link ai" href="#">Next</a></li>
+            <ul class="pagination pagination-lg justify-content-center bg-body" id="paginas">
+                <li class="page-item"><a class="page-link ai" ><i class="bi bi-arrow-left"></i></a></li>
+                <li class="page-item"><a class="page-link ai" id="pag1">1</a></li>
+                <li class="page-item"><a class="page-link ai" id="pag2">2</a></li>
+                <li class="page-item"><a class="page-link ai" >3</a></li>
+                <li class="page-item"><a class="page-link ai" ><i class="bi bi-arrow-right"></i></a></li>
             </ul>
         </section>
-
-        <!-- CARRITO LATERAL DERECHO -->
-        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
-
-            <div class="offcanvas-header" id="offcanvasRight">
-                <div class="offcanvas-title">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-            </div>
-            
-            <div class="offcanvas-body">
-                
-            </div>
-            <div class="offcanvas-footer">
-                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
-                    Vaciar carrito
-                </button>
-                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
-                Continuar compra
-                </button><br>
-                <span>Precio total:</span>
-                <p class="text-center" id="precioTotal"></p>
-            </div>
-        </div>
-        <!-- IMPORTANTE -->
-        <!-- IMPORTANTE -->
         <!-------------------------------------------->
         
-        <!-- <section class="mb-5 w-100">
-            <img src="img/banner2.jpg" alt="">
-        </section> -->
+        <section class="mb-5 w-100 d-flex justify-content-center align-items-center" style="background-image: url(img/banner6.jpg);background-size: cover;height: 400px;">
+            <h2 class="text-black">Gracias por elejirnos, esperamos que disfrutes de nuestros productos</h2>
+        </section>
         <!-------------------------------------------->
 
         <section class="container-xl justify-content-center">
@@ -254,7 +246,7 @@
     <script src="js/menu.js"></script>
     <script src="js/tienda.js"></script>
     <script src="js/filtro.js"></script>
-    <script src="js/postres.js"></script>
+    <!-- <script src="js/postres.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

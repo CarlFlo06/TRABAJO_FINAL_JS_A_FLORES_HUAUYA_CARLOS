@@ -39,27 +39,15 @@
                     <ul class="">
                         <li><a href="inicio.html" class="">Inicio</a></li>
                         <li><a href="nosotros.html" class="">Nosotros</a></li>
-                        <li><a href="tienda.html" class="">Tienda</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="#">Bocaditos</a></li>
-                                    <li><a href="#">Tortas</a></li>
-                                    <li><a href="#">Postres</a></li>
-                                 </ul> -->
-                            </li>
-                        <li><a href="#" class="">Especialidades</a>
-                                <!-- <ul class="submenu">
-                                    <li><a href="especial_pasteles.html">Decoración de pasteles</a></li>
-                                    <li><a href="especial_tallados.html">Tallados con frutas y verduras</a></li>
-                                </ul> -->
-                        </li>
+                        <li><a href="tienda.html" class="">Tienda</a></li>
+                        <li><a href="#" class="">Especialidades</a></li>
                         <li><a href="contacto.html" class="">Contáctanos</a></li>
                     </ul>    
                 </nav>
     
                 <div class="head">
                     <a href="especial_tallados.html" class="ai"><i class="fa-solid fa-book"></i></a>
-                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
-                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+                    
                     <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
                     
                 </div>
@@ -77,6 +65,42 @@
             </div>
             
         </header>
+        <!-------------------------------------------->
+        
+        <!-- BOTON FLOTANTE -->
+        <a href="https://wa.me/51979617922" class="btnflotante2">
+            <img class="" src="icon/whatsapp.png" alt="">
+        </a>
+        <!--  -->
+        <!-- BOTON FLOTANTE 2 -->
+        <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
+            <i class="bi bi-cart" id="carritoContenedor1">0</i>
+        </a>
+        <!--  -->
+        <!-- CARRITO LATERAL DERECHO -->
+        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
+
+            <div class="offcanvas-header" id="offcanvasRight">
+                <div class="offcanvas-title">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="offcanvas-body">
+                
+            </div>
+            <div class="offcanvas-footer">
+                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
+                    Continuar compra
+                </button><br>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+
         <!-----------------SECTION-------------------->
         
         <div class="container">
@@ -96,10 +120,10 @@
         </div>
         
             
-        <section class="contener container bloq d-flex my-5 mb-5">
+        <section class="contener container bloq d-flex my-5 mb-5 pbordes">
             <div class="caja">
                 <!-- <div class=""> -->
-                    <img id="im1" class="w-50" src="img/imagen1.jpg" alt="">
+                    <img id="im1" class="img-fluid" src="img/imagen1.jpg" alt="">
                 <!-- </div> -->
 
                 <div class="m-4" id="bl1">
@@ -125,7 +149,7 @@
                 </div>
 
                 <!-- <div class=""> -->
-                    <img id="im2" class="w-50" src="img/imagen3.jpg" alt="">
+                    <img id="im2" class="img-fluid" src="img/imagen3.jpg" alt="">
                 <!-- </div> -->
            </div> 
         </section>
@@ -187,6 +211,9 @@
         </footer>
 
     </main>
+    
     <script src="js/menu.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
